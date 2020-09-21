@@ -65,17 +65,6 @@
         <!-- To configure the consent receipt, go to .env file.-->
         <p class="lead">Verbind uw interesses om uw ervaring te personaliseren.</p>
         <p class="lead">Ontvang slimme suggesties voor het tv-programma dat u niet mag missen.</p>
-        {{#if session.userAccessToken}}
-        <br /><br />
-        <p class="lead">Consent already provided - Here is the consent user access token</p>
-        <div class="input-group"><input class="form-control" id="consentUserAccessToken" readonly="true" type="password"
-            value="{{session.userAccessToken}}">
-          <div class="input-group-addon">
-            &nbsp;<a href="javascript:copyToClipboard('consentUserAccessToken')"><i
-                class="material-icons-outlined text-primary" aria-hidden="true">file_copy</i></a>
-          </div>
-        </div>
-        {{/if}}
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-primary btn-outline-light" href="{{actionActivateConsent}}">
             <i class="material-icons mr-1">airplay</i>

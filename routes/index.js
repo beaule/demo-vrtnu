@@ -10,7 +10,6 @@ var router = express.Router();
 var Session = require("../lib/session.js");
 var Authorization = require("../lib/api/authorization.js");
 var Consents = require("../lib/api/consents.js");
-var Cages = require("../lib/api/cages.js");
 var Custom = require("../lib/custom.js");
 
 /***********************************

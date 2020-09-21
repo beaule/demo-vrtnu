@@ -1,2 +1,2 @@
-# demo-vrtnu
+# sample-app
 Created with CodeSandbox

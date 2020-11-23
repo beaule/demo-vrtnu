@@ -99,7 +99,8 @@ function renderHome(req, res, prefered) {
         Consents.ROOT_PATH_CONSENT_RECEIPT + process.env.CONSENT_RECEIPT_ID
       ),
       actionRevokeConsent: Authorization.deAuthorize(),
-      creativeWorks: creativeWorksForUi
+      creativeWorks: creativeWorksForUi,
+      active: prefered
     });
   });
 }
